@@ -1,7 +1,7 @@
 # This is my Dev Checklist
 
-I want to be able to quite a few things before I would say I'm Proficient in a programming Langauge
-So this is my personal checklist to do each of these with as little assistance from AI as possible
+I want to be able to quite a few things before I would say I'm Proficient in a programming Langauge.
+So this is my personal checklist to do each of these with as little assistance from AI as possible.
 All Code will be documented as proof I understand the concepts. 
 All AI assistance will be credited aswell.
 
@@ -26,3 +26,11 @@ When I have the change I will have a Linux boot drive and run desktop apps on th
 4. Connecting a desktop App to a textfile for persistence
 5. Connecting a desktop App to a Database
 6. Connecting a desktop App to an API
+
+## Web
+Web is an interesting topic, however there is no way to do everything with web like we do with our other langauges, I am going to do some different things with our web frameworks
+1. Static Website
+2. Full Crud Application (Each one will be a different topic linked to a different API)
+3. Website served over an API
+
+I will not reuse API's from the applications, I will be attempting to do as much as I possibly can
