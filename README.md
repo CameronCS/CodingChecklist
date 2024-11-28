@@ -10,14 +10,13 @@ All AI assistance will be credited aswell.
 ### Console
 1. Basic Hello World
 2. Simple I/O Parsing
-3. Type Depending Inputs
-4. Calculator
-5. Working With data structures such as arrays
-6. Working with Text files
-7. Running applications with mainloops
-8. Database Connection
-9. Connection to API's
-10. Creation on an API
+3. Calculator
+4. Working With data structures such as arrays
+5. Working with Text files
+6. Running applications with mainloops
+7. Database Connection
+8. Connection to API's
+9. Creation on an API
 ### Desktop
 Note, I currently work on a windows machine and most desktop apps will be windows related.
 When I have the change I will have a Linux boot drive and run desktop apps on there if possible so Windows Specific Libraries would be used in some applications
