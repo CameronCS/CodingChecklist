@@ -9,5 +9,5 @@ the GO lang compiler is all that is required
 
 ## Programs Made
 Each List will either be the name of the project or the type of project
-1. Hello World [HelloWorld](/tree/main/GO%20Lang/HelloWorld)
-2. Person Creator [PersonCreateor](tree/main/GO%20Lang/PersonCreateor)
+1. Hello World [HelloWorld](/GO%20Lang/HelloWorld)
+2. Person Creator [PersonCreateor](/GO%20Lang/PersonCreator)
