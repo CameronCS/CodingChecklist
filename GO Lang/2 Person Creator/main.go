@@ -9,6 +9,7 @@ import (
 	"time"
 )
 
+// Create a struct for our person object
 type Person struct {
 	fullName   string
 	age        int
@@ -17,6 +18,7 @@ type Person struct {
 	address    string
 }
 
+// Create a ToString method for our struct
 func (person Person) ToString() string {
 	var strAge string = strconv.Itoa(person.age)
 	var personToString string = strings.Join(
@@ -31,10 +33,12 @@ func (person Person) ToString() string {
 	return personToString
 }
 
+// Remove the \r\n from the string
 func stripSuffix(item string) string {
 	return strings.ReplaceAll(item, "\r\n", "")
 }
 
+// Print Errors if there are errors
 func printErr(err error) {
 	if err != nil {
 		fmt.Println("Error: ", err.Error())
@@ -43,12 +47,21 @@ func printErr(err error) {
 	return
 }
 
+// Main method
 func main() {
 	// Global Error Declaration
 	var err error
 
 	fmt.Println("Hello User!\nLets capture your personal details!")
+
+	// Create our input route
 	var stdin *bufio.Reader = bufio.NewReader(os.Stdin)
+
+	// To avoid repetition
+	// fmt.Print is used to print without the newline character
+	// get the string on the left and the error on the right
+	// get the string without the suffix of \r\n
+	// if there is an error we can print it
 
 	var fullName string
 	fmt.Print("Enter your full name: ")
@@ -62,6 +75,8 @@ func main() {
 	str_age, err = stdin.ReadString('\n')
 	printErr(err)
 	conv := strings.Replace(str_age, "\r\n", "", 1)
+	// here we get the age as a number the error
+	// if there is an error converting to in we call print error
 	age, err = strconv.Atoi(conv)
 	printErr(err)
 
@@ -83,9 +98,11 @@ func main() {
 	address = stripSuffix(address)
 	printErr(err)
 
+	// Tell the user we are making their class
 	fmt.Println("Compiling your personal details...")
 	var sleep_time int = 5
 	time.Sleep(1 * time.Second)
+	// Create a 5 second time because its fun :D
 	fmt.Printf("Results ready in: (5)")
 	for i := sleep_time; i >= 0; i-- {
 		fmt.Print("\b\b")
@@ -93,6 +110,8 @@ func main() {
 		time.Sleep(1 * time.Second)
 	}
 
+	// Create our new person
 	var person = Person{fullName: fullName, age: age, idNumber: idNumber, occupation: occupation, address: address}
+	// Use the ToString method to display the person
 	fmt.Printf(person.ToString())
 }
